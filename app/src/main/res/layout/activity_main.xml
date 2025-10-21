@@ -33,6 +33,14 @@
         android:layout_marginTop="40dp"
         android:text="Open" />
 
+    <Button
+        android:id="@+id/btnOpenSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Open" />
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

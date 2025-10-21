@@ -15,7 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private EditText edtName, edtCity;
-    private Button btnOpen;
+    private Button btnOpen, btnOpenSecond;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         edtName = findViewById(R.id.edtName);
         edtCity = findViewById(R.id.edtCity);
         btnOpen = findViewById(R.id.btnOpen);
-
+        btnOpenSecond = findViewById(R.id.btnOpenSecond);
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("city", city);
                 startActivity(intent);
 
+            }
+        });
+
+        btnOpenSecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ItemsActivity.class);
+                startActivity(intent);
             }
         });
     }
