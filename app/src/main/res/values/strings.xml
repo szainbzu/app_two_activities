@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">app_two_activities</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_city_name">Enter City name</string>
+</resources>
