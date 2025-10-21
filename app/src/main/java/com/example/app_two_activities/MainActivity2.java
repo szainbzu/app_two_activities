@@ -23,7 +23,8 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });
         txtResult = findViewById(R.id.txtResult);
-
+        // this is new code..
+        //.....
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
         String city = intent.getStringExtra("city");
